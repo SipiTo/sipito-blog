@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(Sipi\User::class, function (Faker $faker) {
     static $password;
 
     return [
@@ -21,5 +21,16 @@ $factory->define(App\User::class, function (Faker $faker) {
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
+    ];
+});
+
+$factory->define(Sipi\Posts::class, function (Faker $faker) {
+
+    return [
+        'short'  => $faker->sentence(1),
+        'long'   => $faker->text(110),
+        'content'  => $faker->text(900),
+        'autor' => '1',
+        'img' => 'asdsa',
     ];
 });

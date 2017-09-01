@@ -14,24 +14,7 @@
 	<section>
 		<div class="container">
 
-			<div class="item">
-				<div class="imagen">
-					<img src="img/houstonhospitals-FA.jpg">
-				</div>
-				<div class="content">
-					<div>
-						<p>DISASTERS</p>
-					</div>
-					<div>
-						<p>
-							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
-						</p>
-					</div>
-					<div>
-						<p>MEGAN MOLTENI</p>
-					</div>
-				</div>				
-			</div>
+		@foreach($posted as $post)
 
 			<div class="item">
 				<div class="imagen">
@@ -39,60 +22,25 @@
 				</div>
 				<div class="content">
 					<div>
-						<p>DISASTERS</p>
+						<p>{{ $post->id }} {{ $post->short }}</p>
 					</div>
 					<div>
 						<p>
-							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
+							<h4>{{ $post->long }}</h4>
 						</p>
 					</div>
 					<div>
-						<p>MEGAN MOLTENI</p>
+						<p>{{ $post->autor }}</p>
 					</div>
 				</div>				
 			</div>
-
-			<div class="item">
-				<div class="imagen">
-					<img src="img/houstonhospitals-FA.jpg">
-				</div>
-				<div class="content">
-					<div>
-						<p>DISASTERS</p>
-					</div>
-					<div>
-						<p>
-							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
-						</p>
-					</div>
-					<div>
-						<p>MEGAN MOLTENI</p>
-					</div>
-				</div>				
-			</div>
+			@endforeach
 
 		</div>
 
 		<div class="container">
 
-			<div class="item">
-				<div class="imagen">
-					<img src="img/houstonhospitals-FA.jpg">
-				</div>
-				<div class="content">
-					<div>
-						<p>DISASTERS</p>
-					</div>
-					<div>
-						<p>
-							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
-						</p>
-					</div>
-					<div>
-						<p>MEGAN MOLTENI</p>
-					</div>
-				</div>				
-			</div>
+		@foreach($posted as $post)
 
 			<div class="item">
 				<div class="imagen">
@@ -100,39 +48,21 @@
 				</div>
 				<div class="content">
 					<div>
-						<p>DISASTERS</p>
+						<p>{{ $post->id }} {{ $post->short }}</p>
 					</div>
 					<div>
 						<p>
-							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
+							<h4>{{ $post->long }}</h4>
 						</p>
 					</div>
 					<div>
-						<p>MEGAN MOLTENI</p>
+						<p>{{ $post->autor }}</p>
 					</div>
 				</div>				
 			</div>
-
-			<div class="item">
-				<div class="imagen">
-					<img src="img/houstonhospitals-FA.jpg">
-				</div>
-				<div class="content">
-					<div>
-						<p>DISASTERS</p>
-					</div>
-					<div>
-						<p>
-							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
-						</p>
-					</div>
-					<div>
-						<p>MEGAN MOLTENI</p>
-					</div>
-				</div>				
-			</div>
-			
+			@endforeach
 		</div>
-	</section>
+		{{-- {!! $posted->render(5) !!} --}}
+	</sectio1n>
 </body>
 </html>
