@@ -11,6 +11,128 @@
 </head>
 
 <body>
-<h2>LESS!! Compilado</h2>
+	<section>
+		<div class="container">
+
+			<div class="item">
+				<div class="imagen">
+					<img src="img/houstonhospitals-FA.jpg">
+				</div>
+				<div class="content">
+					<div>
+						<p>DISASTERS</p>
+					</div>
+					<div>
+						<p>
+							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
+						</p>
+					</div>
+					<div>
+						<p>MEGAN MOLTENI</p>
+					</div>
+				</div>				
+			</div>
+
+			<div class="item">
+				<div class="imagen">
+					<img src="img/houstonhospitals-FA.jpg">
+				</div>
+				<div class="content">
+					<div>
+						<p>DISASTERS</p>
+					</div>
+					<div>
+						<p>
+							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
+						</p>
+					</div>
+					<div>
+						<p>MEGAN MOLTENI</p>
+					</div>
+				</div>				
+			</div>
+
+			<div class="item">
+				<div class="imagen">
+					<img src="img/houstonhospitals-FA.jpg">
+				</div>
+				<div class="content">
+					<div>
+						<p>DISASTERS</p>
+					</div>
+					<div>
+						<p>
+							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
+						</p>
+					</div>
+					<div>
+						<p>MEGAN MOLTENI</p>
+					</div>
+				</div>				
+			</div>
+
+		</div>
+
+		<div class="container">
+
+			<div class="item">
+				<div class="imagen">
+					<img src="img/houstonhospitals-FA.jpg">
+				</div>
+				<div class="content">
+					<div>
+						<p>DISASTERS</p>
+					</div>
+					<div>
+						<p>
+							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
+						</p>
+					</div>
+					<div>
+						<p>MEGAN MOLTENI</p>
+					</div>
+				</div>				
+			</div>
+
+			<div class="item">
+				<div class="imagen">
+					<img src="img/houstonhospitals-FA.jpg">
+				</div>
+				<div class="content">
+					<div>
+						<p>DISASTERS</p>
+					</div>
+					<div>
+						<p>
+							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
+						</p>
+					</div>
+					<div>
+						<p>MEGAN MOLTENI</p>
+					</div>
+				</div>				
+			</div>
+
+			<div class="item">
+				<div class="imagen">
+					<img src="img/houstonhospitals-FA.jpg">
+				</div>
+				<div class="content">
+					<div>
+						<p>DISASTERS</p>
+					</div>
+					<div>
+						<p>
+							<h4>Harvey Evacuees Leave Their Belongings—And Health Records—Behind</h4>
+						</p>
+					</div>
+					<div>
+						<p>MEGAN MOLTENI</p>
+					</div>
+				</div>				
+			</div>
+			
+		</div>
+	</section>
 </body>
 </html>
