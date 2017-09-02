@@ -9,7 +9,15 @@ class PostsController extends Controller
 {
     public function index()
     {
-    	$posted = Posts::orderBy('id','ASC')->paginate(10);
-    	return view('welcome', compact('posted'));
+    	//Return post categoria=1
+    	$posts = Posts::where('categoria',1)
+    		->orderBy('id','DESC')
+    		->paginate(5);
+
+    	$posted = Posts::where('categoria',2)
+	    	->orderBy('id','DESC')
+	    	->paginate(5);
+
+    	return view('welcome', compact('posts','posted'));
     }
 }

@@ -12,57 +12,57 @@
 
 <body>
 	<section>
-		<div class="container">
-
-		@foreach($posted as $post)
-
-			<div class="item">
-				<div class="imagen">
-					<img src="img/houstonhospitals-FA.jpg">
-				</div>
-				<div class="content">
-					<div>
-						<p>{{ $post->id }} {{ $post->short }}</p>
-					</div>
-					<div>
-						<p>
-							<h4>{{ $post->long }}</h4>
-						</p>
-					</div>
-					<div>
-						<p>{{ $post->autor }}</p>
-					</div>
-				</div>				
-			</div>
-			@endforeach
-
-		</div>
 
 		<div class="container">
-
-		@foreach($posted as $post)
-
-			<div class="item">
-				<div class="imagen">
-					<img src="img/houstonhospitals-FA.jpg">
-				</div>
-				<div class="content">
-					<div>
-						<p>{{ $post->id }} {{ $post->short }}</p>
+			@foreach($posts as $post)
+				@if($post->categoria == 1)
+					<div class="item">
+						<div class="imagen">
+							<img src="img/{{ $post->img }}.jpg">
+						</div>
+						<div class="content">
+							<div>
+								<p>{{ $post->id }} {{ $post->short }}</p>
+							</div>
+							<div>
+								<p>
+									<h4>{{ $post->long }}</h4>
+								</p>
+							</div>
+							<div>
+								<p>{{ $post->categoria }}</p>
+							</div>
+						</div>				
 					</div>
-					<div>
-						<p>
-							<h4>{{ $post->long }}</h4>
-						</p>
-					</div>
-					<div>
-						<p>{{ $post->autor }}</p>
-					</div>
-				</div>				
-			</div>
+				@endif
 			@endforeach
 		</div>
-		{{-- {!! $posted->render(5) !!} --}}
+		
+
+		<div class="container">
+			@foreach($posted as $post)
+				@if($post->categoria == 2)
+					<div class="item">
+						<div class="imagen">
+							<img src="img/{{ $post->img }}.jpg">
+						</div>
+						<div class="content">
+							<div>
+								<p>{{ $post->id }} {{ $post->short }}</p>
+							</div>
+							<div>
+								<p>
+									<h4>{{ $post->long }}</h4>
+								</p>
+							</div>
+							<div>
+								<p>{{ $post->categoria }}</p>
+							</div>
+						</div>				
+					</div>
+				@endif
+			@endforeach
+		</div>
 	</sectio1n>
 </body>
 </html>

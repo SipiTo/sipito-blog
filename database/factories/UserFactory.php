@@ -27,10 +27,11 @@ $factory->define(Sipi\User::class, function (Faker $faker) {
 $factory->define(Sipi\Posts::class, function (Faker $faker) {
 
     return [
-        'short'  => $faker->sentence(1),
-        'long'   => $faker->text(110),
-        'content'  => $faker->text(900),
-        'autor' => '1',
-        'img' => 'asdsa',
+        'short'     => $faker->sentence(1),
+        'long'      => $faker->text(110),
+        'content'   => $faker->text(900),
+        'categoria' => '1',
+        'autor'     => '1',
+        'img'       => 'asdsa',
     ];
 });
