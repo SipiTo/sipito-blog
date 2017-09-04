@@ -1,2 +1,0 @@
-# sipito-blog
-SipiTo Blog
