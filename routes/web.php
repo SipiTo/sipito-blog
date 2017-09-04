@@ -13,3 +13,4 @@
 
 
 Route::get('/', 'PostsController@index');
+Route::get('/home', 'HomeController@home');
