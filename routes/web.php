@@ -13,9 +13,5 @@
 
 
 Route::get('/', 'PostsController@index');
-<<<<<<< HEAD
 
 Route::get('/up', 'PostsController@up');
-=======
-Route::get('/home', 'HomeController@home');
->>>>>>> afe88af3fe9fd4c7c6d218ec813bf34358bcf79d
