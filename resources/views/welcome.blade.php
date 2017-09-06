@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+@extends('layouts.app')
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="css/less/style.css">
-
-<title>LESS</title>
-
-</head>
-
-<body>
 	<section>
-
 		<div class="container">
 			@foreach($posts as $post)
 				@if($post->categoria == 1)
@@ -65,6 +53,4 @@
 				@endif
 			@endforeach
 		</div>
-	</sectio1n>
-</body>
-</html>
+	</section>
