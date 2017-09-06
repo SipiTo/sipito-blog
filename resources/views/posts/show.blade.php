@@ -1,1 +1,9 @@
-@extends('layouts.app')
+@extends('layout')
+
+@section('content')
+
+	<p>
+			{{ $post->long }}
+	</p>
+
+@endsection
