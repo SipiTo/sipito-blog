@@ -18,7 +18,9 @@
 				@if($post->categoria == 1)
 					<div class="item">
 						<div class="imagen">
-							<img src="img/{{ $post->img }}.jpg">
+							<a href="{{ route('posts.show', $post->id) }}">
+								<img src="img/{{ $post->img }}.jpg">
+							</a>
 						</div>
 						<div class="content">
 							<div>
