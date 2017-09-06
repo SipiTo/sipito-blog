@@ -2,8 +2,8 @@
 
 namespace Sipi\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Sipi\Posts;
+use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
@@ -19,5 +19,11 @@ class PostsController extends Controller
 	    	->paginate(5);
 
     	return view('welcome', compact('posts','posted'));
+    }
+
+    public function show($id)
+    {
+        $post = Posts::find($id);
+        return view('posts.show', compact('post'));
     }
 }

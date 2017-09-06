@@ -1,2 +1,1 @@
-# sipito-blog
-SipiTo Blog
+#SIPITO BLOG
